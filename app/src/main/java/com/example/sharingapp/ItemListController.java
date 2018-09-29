@@ -33,7 +33,7 @@ public class ItemListController {
     }
 
     public boolean editItemCommand(Item item, Item updatedItem, Context context){
-        EdiitItemCommand editItemCommand = new EditItemCommand(itemList, item, updatedItem, context);
+        EditItemCommand editItemCommand = new EditItemCommand(itemList, item, updatedItem, context);
         editItemCommand.execute();
         return editItemCommand.isExecuted();
     }
